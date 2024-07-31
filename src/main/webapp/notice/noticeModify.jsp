@@ -17,11 +17,11 @@
 			</tr>
 			<tr>
 				<td>제목</td>
-				<td><input style="width:95%" name="subject" value=${n.subject }></td>
+				<td><input style="width:95%" name="subject" value="${n.subject }"></td>
 			</tr>
 			<tr>
 				<td>내용</td>
-				<td><textarea style="width:95%" name="comment" value=${n.comment }></textarea></td>
+				<td><textarea style="width:95%" name="comment">${n.comment }</textarea></td>
 			</tr>
 		</table>
 		<c:choose>

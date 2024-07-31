@@ -41,6 +41,7 @@ public class WishInsertCart extends HttpServlet {
 		String mb_id = (String)session.getAttribute("id");
 		int it_uid = Integer.parseInt(request.getParameter("it_uid"));
 		int it_price = Integer.parseInt(request.getParameter("it_price"));
+		int it_sale = Integer.parseInt(request.getParameter("it_sale"));
 		int it_point = Integer.parseInt(request.getParameter("it_point"));
 		int it_qty = Integer.parseInt(request.getParameter("it_qty"));
 		String it_opt1 = request.getParameter("it_opt1");
@@ -52,6 +53,7 @@ public class WishInsertCart extends HttpServlet {
 	    c.setMb_id(mb_id);
 	    c.setIt_uid(it_uid);
 	    c.setIt_price(it_price);
+	    c.setIt_sale(it_sale);
 	    c.setIt_point(it_point);
 	    c.setIt_qty(it_qty);
 	    c.setCt_date(signdate);

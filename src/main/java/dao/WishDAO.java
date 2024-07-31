@@ -37,6 +37,7 @@ public class WishDAO {
                 w.setIt_uid(rs.getInt("it_uid"));
                 w.setIt_name(rs.getString("it_name"));
                 w.setIt_price(rs.getInt("it_price"));
+                w.setIt_sale(rs.getInt("it_sale"));
                 w.setQty(rs.getInt("qty"));
                 w.setIt_option(rs.getString("it_option"));
                 w.setIt_point(rs.getInt("it_point"));

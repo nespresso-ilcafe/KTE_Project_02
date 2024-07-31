@@ -45,7 +45,7 @@ public class BannerWrite extends HttpServlet {
 	      SimpleDateFormat cal = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	      String signdate = cal.format(today);
 	      
-	      String uploadPath="/Users/kwanwoobyun/eclipse-workspace/project02/src/main/webapp/upload_item";
+	      String uploadPath="/Users/kwanwoobyun/eclipse/project02/src/main/webapp/upload_item";
 	      int size=10*1024*1024;
 	      
 	      MultipartRequest multi = new MultipartRequest(request, uploadPath, size, "utf-8", new DefaultFileRenamePolicy());

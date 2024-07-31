@@ -150,7 +150,6 @@ if(session_id != null && session_cart == null){
 						<a href="/admin/member/list" style="color:white;">[회원관리]</a>
 						<a href="/admin/category/list" style="color:white;">[분류관리]</a>
 						<a href="/admin/item/list" style="color:white;">[상품관리]</a>
-						<a href="/member/logout" style="color:white;">[로그아웃]</a>
 					</td>
 				</tr>
 			</table>

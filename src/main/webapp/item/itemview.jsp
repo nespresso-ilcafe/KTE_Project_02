@@ -14,16 +14,22 @@
                 <td width="360">
                 <input type="hidden" id="qty1" name="qty1" value="${it.it_qty }">
                 	<c:choose>
+                		<c:when test="${it.it_sale > 0 }">
+	                		<div style="position: relative;">
+							    <img src="/upload_item/${it.file1}" style="width: 360px;">
+							    <img src="/img/sale.png" style="position: absolute; top: -10%; left: 0; width: 50%;">
+							</div>
+                    	</c:when>
                 		<c:when test="${it.it_qty == 0 }">
 	                		<div style="position: relative;">
 							    <img src="/upload_item/${it.file1}" style="width: 360px;">
-							    <img src="/img/pngwing.com.png" style="position: absolute; top: 20%; left: 0; width: 100%;">
+							    <img src="/img/soldout.png" style="position: absolute; top: 20%; left: 0; width: 100%;">
 							</div>
                     	</c:when>
                     	<c:when test="${it.it_qty <= 3 }">
 	                		<div style="position: relative;">
 							    <img src="/upload_item/${it.file1}" style="width: 360px;">
-							    <img src="/img/1.png" style="position: absolute; top: -10%; left: 0; width: 50%;">
+							    <img src="/img/almostsoldout.png" style="position: absolute; top: -10%; left: 0; width: 50%;">
 							</div>
                     	</c:when>
                     	<c:otherwise>

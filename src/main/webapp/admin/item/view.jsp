@@ -35,6 +35,11 @@ function cate_2(cate){
 	});
 }
 </script>
+<style>
+	.a {
+		color:black;
+	}
+</style>
 <center>
 <table style="background-color: white">
 	<tr>

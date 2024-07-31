@@ -9,9 +9,9 @@ public class DAO {
 	public void getCon() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			String url="jdbc:mariadb://localhost:3306/pro2";
+			String url="jdbc:mariadb://localhost:3306/pro01";
 			String user="root";
-			String password="1111";
+			String password="0910";
 			
 			con = DriverManager.getConnection(url, user, password);
 		} catch (Exception e) {

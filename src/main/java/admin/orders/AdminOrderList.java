@@ -52,7 +52,6 @@ public class AdminOrderList extends HttpServlet {
 		ArrayList<Orders> orArr = dao.getOdList(startRow, endRow, field, search);
 		request.setAttribute("a", orArr);
 		request.setAttribute("count", count);
-		System.out.println(count);
 		request.setAttribute("field", field);
 		request.setAttribute("search", search);
 		request.setAttribute("pageNum", pageNum);
