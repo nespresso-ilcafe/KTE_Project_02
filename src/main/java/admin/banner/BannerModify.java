@@ -54,7 +54,7 @@ public class BannerModify extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		
-		String uploadPath="/Users/kwanwoobyun/eclipse-workspace/project02/src/main/webapp/upload_item";
+		String uploadPath="/Users/kwanwoobyun/eclipse/project02/src/main/webapp/upload_item";
 		int size=10*1024*1024;
 		
 		MultipartRequest multi = new MultipartRequest(request, uploadPath, size, "utf-8", new DefaultFileRenamePolicy());
